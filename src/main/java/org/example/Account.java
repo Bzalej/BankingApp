@@ -1,5 +1,7 @@
 package org.example;
 
+import static java.lang.System.*;
+
 public class Account {
     private String name;
     private String lastName;
@@ -36,6 +38,9 @@ public class Account {
         return balance = balance - moneyToWithdraw;
     }
 
+    public double add(double moneyToDeposit) {
+        return balance = balance + moneyToDeposit;
+    }
 
     public String getAccountNumber() {
         return accountNumber;
@@ -49,4 +54,15 @@ public class Account {
         return pesel;
     }
 
+    public double credit(double moneyToBorrow) {
+        double check = balance * 0.1;
+        if (check > moneyToBorrow) {
+            return balance += moneyToBorrow;
+
+        } else {
+            System.out.println("Nie posiadasz zdolności kredytowej na żądaną kwotę");
+            return balance;
+        }
+    }
 }
+
