@@ -10,10 +10,19 @@ public class Main {
         System.out.println("Witaj w naszym banku");
         System.out.println("Użytkowniku wpisz login");
         String login=sc.next();
+        if (login.equals(account1.getLogin())) {
+            System.out.println("Login jest poprawny");
+        }else{
+        System.out.println("Login jest niepoprawny");
+
+        }
         System.out.println("podaj kod PIN");
         int pin=sc.nextInt();
-
-
+        if (pin==1234) {
+            System.out.println("PIN jest poprawny");
+        }else{
+            System.out.println("PIN jest niepoprawny");
+        }
 
     }
 

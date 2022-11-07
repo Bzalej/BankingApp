@@ -19,6 +19,8 @@ public class Account {
         this.pin=pin;
 
     }
-
+    public String getLogin() {
+        return login;
+    }
 
 }
