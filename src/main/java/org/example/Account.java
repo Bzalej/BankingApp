@@ -22,5 +22,23 @@ public class Account {
     public String getLogin() {
         return login;
     }
+    public  int getPin(){
+        return pin;
+    }
 
+    public double getBalance() {
+        return balance;
+    }
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getPesel() {
+        return pesel;
+    }
 }
